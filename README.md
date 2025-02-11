@@ -6,7 +6,9 @@ Here you can find my own integrations in one place for Home Assistant. You can f
 
 ## ⚡Did you find a BUG?
 
-[Open an issue on GitHub](https://github.com/Bearstorm/HA-custom-integration/issues/new/choose).
+[Open an issue on GitHub](https://github.com/Bearstorm/HA-custom-integration/Projects
+
+/ESP32 ​​​Human presence/issues/new/choose).
 
 ## 📫 Here are other links to my channels.
 
