@@ -25,4 +25,4 @@ One-time donation link via PayPal:[here](https://www.paypal.com/donate/?hosted_b
 
 
 
-More detailed instructions are[here](https://github.com/Bearstorm/HA_Blueprints/blob/main/Automations/Zigbee2MQTT%20IKEA%20Somrig%20controller.md).
+More detailed instructions are[here](https://github.com/Bearstorm/HA-custom-integration/blob/main/Projects/ESP32%20%E2%80%8B%E2%80%8B%E2%80%8BHuman%20presence/ESP32%20%E2%80%8B%E2%80%8B%E2%80%8BHuman%20presence.md).
