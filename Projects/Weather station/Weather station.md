@@ -34,9 +34,9 @@ This guide will walk you through building your own Zigbee weather station that i
 ***
 
 ## 1. Required Components and Assembly
-      Hardware Components:
+Hardware Components:
 
-    ○
+   ○
     CC2530 Zigbee Module – Used for wireless communication via the Zigbee protocol.
     ○
     BME280 Sensor – Measures temperature, humidity, and atmospheric pressure.
@@ -197,7 +197,7 @@ Wiring
 
   - platform: history_stats
     name: Daily rain clicks
-    entity_id: switch.0x00124b000633d676_l5
+    entity_id: # sem treba vložiť názov tvojej entity
     state: 'off'
     type: count
     start: '{{ now().replace(hour=0, minute=0, second=0) }}'
@@ -339,4 +339,79 @@ Wiring
 #########################################################
 ```
 
+***
+## Home Assistant customize.yaml
+
+```yaml
+switch.meteostanica_l5:
+  friendly_name: # your frielndly name
+
+number.meteostanica_l6:
+  friendly_name: # your frielndly name
+
+switch.meteostanica_l7:
+  friendly_name: # your frielndly name
+
+sensor.meteostanica_voltage_l8:
+  friendly_name: # your frielndly name
+```
+
+## Home Assistan template_sensors.yaml
+
+```yaml
+- sensor:
+    - name: "Absolute Humidity shed"
+      unit_of_measurement: "g/m³"
+      state: >-
+        {% set h = states('sensor.humidity_shed') | float %}
+        {% set t = states('sensor.temperature_shed') | float %}
+        {% if h == 0 or t == 0 %}
+          unknown
+        {% else %}
+          {{ (h * 6.112 * 2.1674 * (2.71828 ** ((t * 17.67) / (t + 243.5))) / (t + 273.15)) | round(1) }}
+        {% endif %}
+
+    - name: "Dewpoint shed"
+      unit_of_measurement: "°C"
+      state: >-
+        {% set h = states('sensor.humidity_shed') | float %}
+        {% set t = states('sensor.temperature_shed') | float %}
+        {% if h == 0 or t == 0 %}
+          unknown
+        {% else %}
+          {{ ((t - (14.55 + 0.114 * t) * (1 - (0.01 * h)) - ((2.5 + 0.007 * t) * (1 - (0.01 * h)) ** 3) - (15.9 + 0.117 * t) * (1 - (0.01 * h)) ** 14)) | round(1) }}
+        {% endif %}
+
+    - name: "Wind speed"
+      unit_of_measurement: "m/s"
+      state: >-
+        {% set count = states('sensor.windpulse') | int %}
+        {% set m_per_pulse = 0.2826 %}
+        {{ (count * m_per_pulse) | round(0) }}
+
+    - name: "Wind speed (km/h)"
+      unit_of_measurement: "km/h"
+      state: >-
+        {% set mps = states('sensor.windspeed') | float %}
+        {{ (mps * 3.6) | round(0) }}
+
+    - name: "Wind force"
+      unit_of_measurement: "Bft"
+      state: >-
+        {% set wind = states('sensor.windspeed') | float %}
+        {% if wind <= 0.2 %} 0
+        {% elif wind <= 1.5 %} 1
+        {% elif wind <= 3.3 %} 2
+        {% elif wind <= 5.4 %} 3
+        {% elif wind <= 7.9 %} 4
+        {% elif wind <= 10.7 %} 5
+        {% elif wind <= 13.8 %} 6
+        {% elif wind <= 17.1 %} 7
+        {% elif wind <= 20.7 %} 8
+        {% elif wind <= 24.4 %} 9
+        {% elif wind <= 28.4 %} 10
+        {% elif wind <= 32.6 %} 11
+        {% else %} 12
+        {% endif %}
+```
 
