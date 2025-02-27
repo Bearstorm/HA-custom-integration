@@ -35,4 +35,4 @@ More detailed instructions are[here](https://github.com/Bearstorm/HA-custom-inte
 
 ![obrázok](https://github.com/user-attachments/assets/eda24e1d-bc37-4ed3-8261-04dc14a64f98)
 
-More detailed instructions are[here](https://github.com/Bearstorm/HA-custom-integration/blob/main/Projects/ESP32%20%E2%80%8B%E2%80%8B%E2%80%8BHuman%20presence/ESP32%20%E2%80%8B%E2%80%8B%E2%80%8BHuman%20presence.md).
+More detailed instructions are[here](https://github.com/Bearstorm/HA-custom-integration/blob/main/Projects/Weather%20station/Weather%20station.md).
