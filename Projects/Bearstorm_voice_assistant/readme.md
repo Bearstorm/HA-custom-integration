@@ -1,6 +1,6 @@
 ## Home Assistant Voice assistant
 
-![puck](https://github.com/user-attachments/assets/28a17f28-107e-4621-ae57-96ce544ed262)
+![full puck](https://github.com/user-attachments/assets/315c2683-3f10-4d5f-b850-15038a06689a)](https://youtu.be/1hn6XT_KmvM)
 ## Click on the image for a link to the video
 
 
