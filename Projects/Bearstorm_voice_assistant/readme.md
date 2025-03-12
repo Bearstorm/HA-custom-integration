@@ -1,7 +1,8 @@
 ## Home Assistant Voice assistant
 
-![full puck](https://github.com/user-attachments/assets/315c2683-3f10-4d5f-b850-15038a06689a)](https://youtu.be/1hn6XT_KmvM)
+[![full puck](https://github.com/user-attachments/assets/315c2683-3f10-4d5f-b850-15038a06689a)](https://youtu.be/1hn6XT_KmvM)
 ## Click on the image for a link to the video
+
 
 
 ## * [yaml file here](https://gist.github.com/Bearstorm/1c3c930c4d1d7e54851469e01bc6e074).
