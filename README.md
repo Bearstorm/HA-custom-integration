@@ -21,7 +21,9 @@ Instagram URL: https://www.instagram.com/bearstormchannel/
 ## 😄 You can support my posts here
 
 ***
-One-time donation link via PayPal:[here](https://www.paypal.com/donate/?hosted_button_id=PVATF8G5NZ392).
+One-time donation link: <a href="https://www.paypal.com/donate/?hosted_button_id=PVATF8G5NZ392">
+  <img src="https://raw.githubusercontent.com/andreostrovsky/donate-with-paypal/925c5a9e397363c6f7a477973fdeed485df5fdd9/blue.svg" alt="Donate with PayPal" height="40"/>
+
 ***
 ## 🔵 📢 ESP32 ​​​Human presence + lux + temperature + pressure + humidity sensors 📢
 
@@ -36,3 +38,9 @@ More detailed instructions are[here](https://github.com/Bearstorm/HA-custom-inte
 ![obrázok](https://github.com/user-attachments/assets/eda24e1d-bc37-4ed3-8261-04dc14a64f98)
 
 More detailed instructions are[here](https://github.com/Bearstorm/HA-custom-integration/blob/main/Projects/Weather%20station/Weather%20station.md).
+
+## 🔵 📢 DIY ​Homeassistant voice assistant  📢
+
+![obrázok](https://github.com/user-attachments/assets/c7af6b0b-25f6-4d04-9365-09ad391e4269)
+
+More detailed instructions are[here](https://github.com/Bearstorm/HA-custom-integration/blob/main/Projects/Bearstorm_voice_assistant/readme.md).
