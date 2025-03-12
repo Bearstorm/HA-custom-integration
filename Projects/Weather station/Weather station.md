@@ -414,5 +414,8 @@ sensor.meteostanica_voltage_l8:
         {% else %} 12
         {% endif %}
 ```
+## 😄 You can support my posts here
+One-time donation link: <a href="https://www.paypal.com/donate/?hosted_button_id=PVATF8G5NZ392">
+  <img src="https://raw.githubusercontent.com/andreostrovsky/donate-with-paypal/925c5a9e397363c6f7a477973fdeed485df5fdd9/blue.svg" alt="Donate with PayPal" height="40"/>
 
 ## ™ **Apache License 2.0** ™ 
