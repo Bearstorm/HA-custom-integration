@@ -415,3 +415,4 @@ sensor.meteostanica_voltage_l8:
         {% endif %}
 ```
 
+## ™ **Apache License 2.0** ™ 
